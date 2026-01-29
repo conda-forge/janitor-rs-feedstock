@@ -1,5 +1,5 @@
 {% set name = "janitor-rs" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/janitor_rs-{{ version }}.tar.gz
-  sha256: f3ad1f00f535a107ed34e07087c3fb56c7b8e16c64dd74835ab89b3ccc93bc70
+  sha256: 54d4f4103a484b1e9c070214a4da2adaee781f02ed30a3895ccf6ef4e9ed2c76
 
 build:
   script:
     - {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
-  number: 1
+  number: 0
 
 requirements:
   build:

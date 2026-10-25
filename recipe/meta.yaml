@@ -1,5 +1,5 @@
 {% set name = "janitor-rs" %}
-{% set version = "0.6.5" %}
+{% set version = "0.6.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/janitor_rs-{{ version }}.tar.gz
-  sha256: 557413f518f8e77a3b62f7dd521c6b93f53cacc70180004a7d7067fafc1bd0a0
+  sha256: dbd9b62b8471017f18447c71283fbe5987fd56083b6bee9d077b5c0a4705bb0f
 
 build:
   script:
